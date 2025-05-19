@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import SingleHeroContent from "../components/organisms/singeHeroContent/SingleHeroContent";
 
 export default function Hero() {
   return (
     <>
-    <SingleHeroContent/>
+    <Suspense fallback={<div>Carregando...</div>}>
+      <SingleHeroContent/>
+    </Suspense>
     </>
   );
 }
