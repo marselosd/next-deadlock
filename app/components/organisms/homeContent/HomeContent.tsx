@@ -36,11 +36,11 @@ export default function HomeContent() {
             </TextCommon>
 
             <TextCommon>
-                Em cada partida, os 12 jogadores controlam heróis únicos, que começam divididos em três rotas ("lanes") de um mapa grande. Para vencer, uma equipe precisa avançar com seus "tropas" (NPCs que lutam ao lado dos jogadores) pelas rotas e destruir o "patrono" da equipe adversária — uma grande entidade sobrenatural localizada na base inimiga.
+                Em cada partida, os 12 jogadores controlam heróis únicos, que começam divididos em três rotas (lanes) de um mapa grande. Para vencer, uma equipe precisa avançar com seus tropas (NPCs que lutam ao lado dos jogadores) pelas rotas e destruir o patrono da equipe adversária — uma grande entidade sobrenatural localizada na base inimiga.
             </TextCommon>
 
             <TextCommon>
-                Os jogadores podem obter "almas" e "pontos de habilidade" ao eliminar tropas, NPCs neutros chamados "habitantes" e outros jogadores. Esses recursos podem ser usados para melhorar as habilidades dos heróis e comprar itens em "lojas de curiosidades", tornando-os mais fortes.
+                Os jogadores podem obter "almas" e "pontos de habilidade" ao eliminar tropas, NPCs neutros chamados "habitantes" e outros jogadores. Esses recursos podem ser usados para melhorar as habilidades dos heróis e comprar itens em lojas de curiosidades, tornando-os mais fortes.
             </TextCommon>
 
             <TextCommon>
