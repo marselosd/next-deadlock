@@ -61,3 +61,7 @@ export interface ImageGaleria {
     src: string;
     alt: string;
 }
+
+export interface CardCommon {
+  children: React.ReactNode;
+}

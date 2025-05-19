@@ -3,6 +3,6 @@ import React from "react";
 
 export default function SubTittle({ children, ...rest }: TxtProps) {
   return (
-    <h2 {...rest}>{children}</h2>
+    <h2 className="text-[var(--color-hover-green)] text-2xl font-bold mb-6 text-center">{children}</h2>
   );
 }

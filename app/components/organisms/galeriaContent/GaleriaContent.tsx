@@ -4,7 +4,8 @@ import React from "react";
 import ImageCommon from "../../atoms/imageCommon/ImageCommon";
 import useWindowResize from "@/app/hooks/useWindowSize";
 import useGaleria from "@/app/hooks/useGaleria";
-import TittleCommon from "../../atoms/tittleCommon/TittleCommon";
+import DivCardCommon from "../../atoms/divCardCommon/DivCardCommon";
+import SubTittle from "../../atoms/subTittleCommon/SubTittle";
 
 const galeriaImagens = [
   { titulo: "Mapa 1", src: "/img/galeria/galeria-1.webp", alt: "Mapa 1" },
@@ -19,17 +20,20 @@ export default function Galeria() {
 
     return (
         <>
-        <div>
-            <TittleCommon>GALERIA</TittleCommon>
-
+        <DivCardCommon>
             <div>
-                {lista.map((img, index) => (
-                    <div key={index} className={""}>
-                        <ImageCommon src={img.src} alt={img.alt} width={width} height={height}></ImageCommon>
-                    </div>
-                ))}
+                <SubTittle>GALERIA</SubTittle>
+
+                <div>
+                    {lista.map((img, index) => (
+                        <div key={index} className={""}>
+                            <ImageCommon src={img.src} alt={img.alt} width={width} height={height}></ImageCommon>
+                            <hr/>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </DivCardCommon>
         </>
     )
 }

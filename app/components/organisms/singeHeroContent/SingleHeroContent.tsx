@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { CharacterFromAPI } from "@/app/types/interfaces/interfaces";
 import TextCommon from "../../atoms/textCommon/TextCommon";
 import DadosSingleHero from "../../molecules/dadosSingleHero/DadosSingleHero";
+import DivCardCommon from "../../atoms/divCardCommon/DivCardCommon";
 
 export default function SingleHeroContent() {
     const searchParams = useSearchParams();
@@ -22,7 +23,9 @@ export default function SingleHeroContent() {
 
     return (
         <>
-        <DadosSingleHero id={hero.id} name={hero.name} description={hero.description} images={hero.images}></DadosSingleHero>
+        <DivCardCommon>
+            <DadosSingleHero id={hero.id} name={hero.name} description={hero.description} images={hero.images}></DadosSingleHero>
+        </DivCardCommon>
         </>
     );
 }
