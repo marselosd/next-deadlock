@@ -1,15 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-primary: #efdec0;
+  --color-bg-secundary: #211f20;
+  --color-bg-third: #407c58;
+  --color-hover-green: #a6dabf;
+  --shadow-underline-green: 0 2px 0 0 var(--color-hover-green);
 }
 
 @media (prefers-color-scheme: dark) {
