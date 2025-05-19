@@ -40,7 +40,7 @@ export default function HomeContent() {
             </TextCommon>
 
             <TextCommon>
-                Os jogadores podem obter "almas" e "pontos de habilidade" ao eliminar tropas, NPCs neutros chamados "habitantes" e outros jogadores. Esses recursos podem ser usados para melhorar as habilidades dos heróis e comprar itens em lojas de curiosidades, tornando-os mais fortes.
+                Os jogadores podem obter almas e pontos de habilidade ao eliminar tropas, NPCs neutros chamados habitantes e outros jogadores. Esses recursos podem ser usados para melhorar as habilidades dos heróis e comprar itens em lojas de curiosidades, tornando-os mais fortes.
             </TextCommon>
 
             <TextCommon>
