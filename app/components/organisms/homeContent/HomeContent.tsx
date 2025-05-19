@@ -36,7 +36,7 @@ export default function HomeContent() {
             </TextCommon>
 
             <TextCommon>
-                Em cada partida, os 12 jogadores controlam heróis únicos, que começam divididos em três rotas (lanes) de um mapa grande. Para vencer, uma equipe precisa avançar com seus tropas (NPCs que lutam ao lado dos jogadores) pelas rotas e destruir o patrono da equipe adversária — uma grande entidade sobrenatural localizada na base inimiga.
+                Em cada partida, os 12 jogadores controlam heróis únicos, que começam divididos em três rotas de um mapa grande. Para vencer, uma equipe precisa avançar com seus tropas pelas rotas e destruir o patrono da equipe adversária — uma grande entidade sobrenatural localizada na base inimiga.
             </TextCommon>
 
             <TextCommon>
