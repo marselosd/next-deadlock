@@ -65,3 +65,9 @@ export interface ImageGaleria {
 export interface CardCommon {
   children: React.ReactNode;
 }
+
+export interface FavoritesContextInter {
+  favoritesId: string[]; 
+  isFavorite: (id: string) => boolean;
+  toggleFavorite: (id: string) => void;  
+}
