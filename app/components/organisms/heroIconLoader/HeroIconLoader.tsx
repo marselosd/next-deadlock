@@ -6,7 +6,7 @@ import TextCommon from "../../atoms/textCommon/TextCommon";
 import IconAndButton from "../../molecules/iconAndButton/IconAndButton";
 import DivCardCommon from "../../atoms/divCardCommon/DivCardCommon";
 
-const IDSExcluidos = [72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 57, 56, 54, 53, 52, 51, 49, 48, 47, 39, 38, 21]; // ID de Boneco em Alpha/Beta (não aparecerão no site).
+export const IDSExcluidos = [72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 57, 56, 54, 53, 52, 51, 49, 48, 47, 39, 38, 21]; // ID de Boneco em Alpha/Beta (não aparecerão no site).
 
 export default function HeroesContent() {
     const { data, isLoading, error } = useApi<CharacterFromAPI[]>(`https://assets.deadlock-api.com/v2/heroes`);
@@ -26,6 +26,7 @@ export default function HeroesContent() {
                     {dataFiltrada.map((personagem) => (
                         <IconAndButton
                         key={personagem.id}
+                        data-testid={personagem.id}
                         img={{
                             src: personagem.images.icon_hero_card,
                             alt: personagem.name,

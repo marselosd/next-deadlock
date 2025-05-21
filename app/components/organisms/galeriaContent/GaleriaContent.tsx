@@ -38,7 +38,7 @@ const shareImage = async (src: string) => {
     }
 }
 
-export default function Galeria() {
+export default function GaleriaContent() {
     const {width, height} = useWindowResize();
     const {imagens: lista} = useGaleria(galeriaImagens);
     const {toggleFavorite, isFavorite} = useFavorites();
@@ -53,12 +53,12 @@ export default function Galeria() {
                         <div key={index} className={""}>
                             <button
                             onClick={() => toggleFavorite(img.src)}
-                            className={`px-2 py-1 rounded ${isFavorite(img.src) ? `bg-[var(--color-bg-secundary)]` : `bg-[var(--color-bg-primary)]`} `}>
+                            className={`px-2 py-1 w-fit m-2 rounded ${isFavorite(img.src) ? `bg-[var(--color-bg-secundary)]` : `bg-[var(--color-bg-primary)]`} `}>
                                 {isFavorite(img.src) ? '★ Favorito' : '☆ Favoritar'}
                             </button>
                             <button
                             onClick={() => shareImage(img.src)}
-                            className="px-2 py-1 rounded bg-[var(--color-bg-primary)] text-white">
+                            className="px-2 py-1 w-fit m-2 rounded bg-[var(--color-bg-primary)] text-white">
                                 Compartilhar
                             </button>
                             <ImageCommon src={img.src} alt={img.alt} width={width} height={height}></ImageCommon>

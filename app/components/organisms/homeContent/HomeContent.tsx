@@ -2,6 +2,7 @@ import React from "react";
 import TextCommon from "../../atoms/textCommon/TextCommon";
 import DivCardCommon from "../../atoms/divCardCommon/DivCardCommon";
 import SubTittle from "../../atoms/subTittleCommon/SubTittle";
+import FormContact from "../form/FormContact";
 
 export default function HomeContent() {
     return(
@@ -50,6 +51,10 @@ export default function HomeContent() {
             <TextCommon>
                 Deadlock se passa em uma versão alternativa da cidade de Nova York, com referências ao ocultismo.
             </TextCommon>
+        </DivCardCommon>
+
+        <DivCardCommon>
+            <FormContact/>
         </DivCardCommon>
         </>
     );
