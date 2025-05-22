@@ -1,17 +1,9 @@
-// app/layout.tsx
-import './globals.css';
-
-export const metadata = {
-  title: 'NextDeadlock',
-  description: 'Descrição do site',
-};
+import React from "react";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
