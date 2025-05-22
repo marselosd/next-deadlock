@@ -46,7 +46,7 @@ export default function GaleriaContent() {
 
   return (
     <DivCardCommon>
-      <div>
+      <div className="pb-20 md:pb-20">
         <SubTittle>{t("navBarContent.buttonGaleriaContent")}</SubTittle>
         <div>
           {lista.map((img, index) => (
@@ -80,6 +80,7 @@ export default function GaleriaContent() {
           ))}
         </div>
       </div>
+      <br/>
     </DivCardCommon>
   );
 }

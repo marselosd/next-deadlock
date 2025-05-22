@@ -2,61 +2,48 @@
 import React from "react";
 import LinkCommon from "../../atoms/linkCommon/LinkCommon";
 import useToggleMenu from "@/app/hooks/useToggleMenu";
-import { usePathname } from "next/navigation";
-import { getLocalizedPath } from "@/app/i18nRequest";
+import { usePathname, useSearchParams } from "next/navigation";
+import { getLocalizedUrlWithParams } from "@/app/utils/getLocalizedUrlWithParams";
 
 const LinkClass = "hover:text-[var(--color-hover-green)] hover:shadow-[var(--shadow-underline-green)]";
 
 export default function NavBar() {
   const { isOpen, toggle } = useToggleMenu();
   const pathname = usePathname();
-
-  const currentLangMatch = pathname.match(/^\/(pt|en|es)(\/|$)/);
-  const currentLang = currentLangMatch ? currentLangMatch[1] : 'pt'; // padrão pt caso não encontre
-
-  const localizedPath = (page: string) => {
-    return `/${currentLang}/${page}`;
-  };
+  const searchParams = useSearchParams();
 
   return (
-    <nav className="bg-[var(--color-bg-third)] px-6 py-3">
+    <nav className="bg-[var(--color-bg-third)] px-8 py-4">
       <div className="flex items-center justify-between">
-        {/* Botão menu mobile */}
-        <button
-          onClick={toggle}
-          className="block text-white text-3xl md:hidden"
-          aria-label="Abrir menu"
-        >
-          ☰
-        </button>
+        {/* Botão Mobile */}
+        <button onClick={toggle} className="block text-white text-3xl md:hidden" aria-label="Abrir menu">☰</button>
 
-        {/* Links desktop */}
-        <div className="hidden md:flex w-full items-center text-base font-semibold uppercase text-white">
-          <div className="flex flex-1 justify-start gap-8">
-            <LinkCommon href={localizedPath('home')} content="Home" className={LinkClass} />
-            <LinkCommon href={localizedPath('heroes')} content="Heroes" className={LinkClass} />
-            <LinkCommon href={localizedPath('galeria')} content="Galeria" className={LinkClass} />
+        {/* Navegação desktop */}
+        <div className="hidden md:flex w-full text-base font-semibold uppercase text-white justify-between">
+          <div className="flex gap-8">
+            <LinkCommon href="/pt/home" content="Home" className={LinkClass} />
+            <LinkCommon href="/pt/heroes" content="Heroes" className={LinkClass} />
+            <LinkCommon href="/pt/galeria" content="Galeria" className={LinkClass} />
           </div>
 
-          <div className="flex gap-6 justify-end w-1/4">
-            <LinkCommon href={getLocalizedPath(pathname, 'pt')} content="🇧🇷 Português" />
-            <LinkCommon href={getLocalizedPath(pathname, 'en')} content="🇺🇸 English" />
-            <LinkCommon href={getLocalizedPath(pathname, 'es')} content="🇪🇸 Español" />
+          <div className="flex gap-4">
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'pt')} content="🇧🇷" />
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'en')} content="🇺🇸" />
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'es')} content="🇪🇸" />
           </div>
         </div>
       </div>
 
-      {/* Menu mobile */}
+      {/* Navegação mobile */}
       {isOpen && (
-        <div className="flex flex-col gap-4 mt-4 text-xs font-semibold uppercase text-white md:hidden">
-          <LinkCommon href={localizedPath('home')} content="Home" className={LinkClass} />
-          <LinkCommon href={localizedPath('heroes')} content="Heroes" className={LinkClass} />
-          <LinkCommon href={localizedPath('galeria')} content="Galeria" className={LinkClass} />
-
-          <div className="flex justify-center gap-6 mt-2">
-            <LinkCommon href={getLocalizedPath(pathname, 'pt')} content="🇧🇷 Português" />
-            <LinkCommon href={getLocalizedPath(pathname, 'en')} content="🇺🇸 English" />
-            <LinkCommon href={getLocalizedPath(pathname, 'es')} content="🇪🇸 Español" />
+        <div className="flex flex-col items-center gap-4 mt-4 text-xs font-semibold uppercase text-white md:hidden">
+          <LinkCommon href="/pt/home" content="Home" className={LinkClass} />
+          <LinkCommon href="/pt/heroes" content="Heroes" className={LinkClass} />
+          <LinkCommon href="/pt/galeria" content="Galeria" className={LinkClass} />
+          <div className="flex gap-4">
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'pt')} content="🇧🇷" />
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'en')} content="🇺🇸" />
+            <LinkCommon href={getLocalizedUrlWithParams(pathname, searchParams, 'es')} content="🇪🇸" />
           </div>
         </div>
       )}

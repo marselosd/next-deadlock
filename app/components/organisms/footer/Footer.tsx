@@ -7,10 +7,10 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-[var(--color-bg-third)] fixed bottom-0 flex justify-between left-0 w-full p-4 z-50 ">
-        <TextCommon>©2025 Marcelo Dalcin, NextDeadlock</TextCommon>
-        <TextCommon>{t("footerContent.textCommonContent2")}</TextCommon>
-        <TextCommon>{t("footerContent.textCommonContent3")}</TextCommon>
+      <footer className="bg-[var(--color-bg-third)] fixed bottom-0 left-0 w-full p-2 sm:p-4 flex flex-col sm:flex-row justify-between items-center gap-2 z-50">
+        <TextCommon className="text-center sm:text-left">©2025 Marcelo Dalcin, NextDeadlock</TextCommon>
+        <TextCommon className="text-center sm:text-left">All image rights to Valve</TextCommon>
+        <TextCommon className="text-center sm:text-left">Special thanks to DeadlockAPI</TextCommon>
       </footer>
     </>
   );

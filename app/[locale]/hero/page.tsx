@@ -1,5 +1,5 @@
+import SingleHeroContent from "@/app/components/organisms/singeHeroContent/SingleHeroContent";
 import React, { Suspense } from "react";
-import SingleHeroContent from "../components/organisms/singeHeroContent/SingleHeroContent";
 
 export default function Hero() {
   return (

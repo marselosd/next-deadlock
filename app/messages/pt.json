@@ -46,10 +46,5 @@
         "favoritoButton": "★ Favorito",
         "favoritarButton": "☆ Favoritar",
         "compartilharButton": "Compartilhar"
-    },
-
-    "footerContent": {
-        "textCommonContent2": "Todos direitos de imagem a Valve",
-        "textCommonContent3": "Obrigado Especial a DeadlockAPI"
     }
 }

@@ -1,5 +1,5 @@
+import HeroIconLoader from "@/app/components/organisms/heroIconLoader/HeroIconLoader";
 import React from "react";
-import HeroIconLoader from "../components/organisms/heroIconLoader/HeroIconLoader";
 
 export default function Heroes() {
   return (

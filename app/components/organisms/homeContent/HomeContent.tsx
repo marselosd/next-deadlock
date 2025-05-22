@@ -11,27 +11,29 @@ export default function HomeContent() {
     
     return(
         <>
-        <DivCardCommon>
-            <SubTittle>{t('sobreContent.subTittleContent')}</SubTittle>
-            <TextCommon>{t('sobreContent.textCommonContent.0')}</TextCommon>
-            <TextCommon>{t('sobreContent.textCommonContent.1')}</TextCommon>
-            <TextCommon>{t('sobreContent.textCommonContent.2')}</TextCommon>
-            <TextCommon>{t('sobreContent.textCommonContent.3')}</TextCommon>
-            <TextCommon>{t('sobreContent.textCommonContent.4')}</TextCommon>
-        </DivCardCommon>
+        <main className="pb-20 md:pb-20">
+            <DivCardCommon>
+                <SubTittle>{t('sobreContent.subTittleContent')}</SubTittle>
+                <TextCommon>{t('sobreContent.textCommonContent.0')}</TextCommon>
+                <TextCommon>{t('sobreContent.textCommonContent.1')}</TextCommon>
+                <TextCommon>{t('sobreContent.textCommonContent.2')}</TextCommon>
+                <TextCommon>{t('sobreContent.textCommonContent.3')}</TextCommon>
+                <TextCommon>{t('sobreContent.textCommonContent.4')}</TextCommon>
+            </DivCardCommon>
 
-        <DivCardCommon>
-            <SubTittle>{t('gameplayContent.subTittleContent')}</SubTittle>
-            <TextCommon>{t('gameplayContent.textCommonContent.0')}</TextCommon>
-            <TextCommon>{t('gameplayContent.textCommonContent.1')}</TextCommon>
-            <TextCommon>{t('gameplayContent.textCommonContent.2')}</TextCommon>
-            <TextCommon>{t('gameplayContent.textCommonContent.3')}</TextCommon>
-            <TextCommon>{t('gameplayContent.textCommonContent.4')}</TextCommon>
-        </DivCardCommon>
+            <DivCardCommon>
+                <SubTittle>{t('gameplayContent.subTittleContent')}</SubTittle>
+                <TextCommon>{t('gameplayContent.textCommonContent.0')}</TextCommon>
+                <TextCommon>{t('gameplayContent.textCommonContent.1')}</TextCommon>
+                <TextCommon>{t('gameplayContent.textCommonContent.2')}</TextCommon>
+                <TextCommon>{t('gameplayContent.textCommonContent.3')}</TextCommon>
+                <TextCommon>{t('gameplayContent.textCommonContent.4')}</TextCommon>
+            </DivCardCommon>
 
-        <DivCardCommon>
-            <FormContact/>
-        </DivCardCommon>
+            <DivCardCommon>
+                <FormContact/>
+            </DivCardCommon>
+        </main>
         </>
     );
 }

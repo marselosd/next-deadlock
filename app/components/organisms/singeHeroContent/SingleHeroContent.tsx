@@ -26,15 +26,17 @@ export default function SingleHeroContent() {
 
     return (
         <>
-        <DivCardCommon>
-            <button
-            onClick={() => toggleFavorite((hero.id).toString())}
-            className={`px-2 py-1 rounded ${isFavorite((hero.id).toString()) ? `bg-[var(--color-bg-secundary)]` : `bg-[var(--color-bg-primary)]`}`}
-            >
-                {isFavorite((hero.id).toString()) ? '★' : '☆'}
-            </button>
-            <DadosSingleHero id={hero.id} name={hero.name} description={hero.description} images={hero.images}></DadosSingleHero>
-        </DivCardCommon>
+        <section className="pb-20 md:pb-20">
+            <DivCardCommon>
+                <button
+                onClick={() => toggleFavorite((hero.id).toString())}
+                className={`px-2 py-1 rounded ${isFavorite((hero.id).toString()) ? `bg-[var(--color-bg-secundary)]` : `bg-[var(--color-bg-primary)]`}`}
+                >
+                    {isFavorite((hero.id).toString()) ? '★' : '☆'}
+                </button>
+                <DadosSingleHero id={hero.id} name={hero.name} description={hero.description} images={hero.images}></DadosSingleHero>
+            </DivCardCommon>
+        </section>
         </>
     );
 }
