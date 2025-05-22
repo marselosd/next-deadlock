@@ -1,0 +1,55 @@
+{
+  "sobreContent": {
+    "subTittleContent": "About",
+    "textCommonContent": [
+      "Deadlock is a third-person multiplayer shooter focused on teamwork and MOBA elements, currently in development and published by Valve.",
+      "Since April 2024, Deadlock has been in early development testing. Players were encouraged to invite friends through the online Steam service, but initially were asked not to share game details publicly.",
+      "Shortly after testing began, images and videos of Deadlock started leaking online. On August 12, 2024, a journalist was banned from the game after publishing a preview on the tech site The Verge.",
+      "Later that month, Valve lifted restrictions on public discussions for testers and launched the official Deadlock page on the Steam store.",
+      "In September 2024, Deadlock reached over 170,000 concurrent players."
+    ]
+  },
+
+  "gameplayContent": {
+    "subTittleContent": "Gameplay",
+    "textCommonContent": [
+      "Deadlock is a third-person shooter with 6v6 teams that blends MOBA elements.",
+      "In each match, 12 players control unique heroes, starting in three lanes on a large map. To win, a team must push its troops through the lanes and destroy the enemy team's patron, a powerful supernatural entity located at their base.",
+      "Players can collect souls and skill points by defeating troops, neutral NPCs called inhabitants, and other players. These resources can be used to upgrade hero abilities and buy items in curiosity shops, making them stronger.",
+      "The map can be explored using ziplines in each lane and teleporters. The game features over 30 playable heroes, each with unique weapons, stats, and abilities.",
+      "Deadlock is set in an alternate version of New York City with occult references."
+    ]
+  },
+
+  "isSubmitedContent": {
+    "subTittleContent": "Message Sent Successfully!",
+    "textCommonContent": "Thank you for your feedback. We'll get back to you soon.",
+    "buttonCommonContent": "New Message"
+  },
+
+  "submitFormContent": {
+    "subTittleContent": "Your Opinion",
+    "textCommonContent": "We want to know what you think about the game!",
+
+    "formNome": "Full Name",
+    "formEmailPlaceholder": "you@email.com",
+    "formMensagem": "Message",
+    "formMnesagemPlaceholder": "Write your message here...",
+    "formButton": "Send Message"
+  },
+
+  "navBarContent": {
+    "buttonGaleriaContent": "Gallery"
+  },
+
+  "galeriaContent": {
+    "favoritoButton": "★ Favorite",
+    "favoritarButton": "☆ Add to Favorites",
+    "compartilharButton": "Share"
+  },
+
+  "footerContent": {
+    "textCommonContent2": "All image rights to Valve",
+    "textCommonContent3": "Special thanks to DeadlockAPI"
+  }
+}

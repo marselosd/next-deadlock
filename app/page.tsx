@@ -1,10 +1,6 @@
-import React from "react";
-import HomeContent from "./components/organisms/homeContent/HomeContent";
+import { redirect } from 'next/navigation';
+import { routing } from './i18n/routing';
 
 export default function Home() {
-  return (
-    <>
-    <HomeContent/>
-    </>
-  );
+  redirect(`/${routing.defaultLocale}`);
 }

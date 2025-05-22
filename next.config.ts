@@ -1,9 +1,11 @@
-import type { NextConfig } from "next";
-
+import {NextConfig} from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
 const nextConfig: NextConfig = {
-  images: {
-    domains: ['assets-bucket.deadlock-api.com'],
-  }
+    images: {
+        domains: ['assets-bucket.deadlock-api.com'],
+    }
 };
-
-export default nextConfig;
+ 
+const withNextIntl = createNextIntlPlugin('./app/i18n/request.ts');
+export default withNextIntl(nextConfig);

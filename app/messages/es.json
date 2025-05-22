@@ -1,0 +1,55 @@
+{
+  "sobreContent": {
+    "subTittleContent": "Acerca de",
+    "textCommonContent": [
+      "Deadlock es un juego de disparos multijugador en tercera persona centrado en el trabajo en equipo y elementos de MOBA, actualmente en desarrollo y publicado por Valve.",
+      "Desde abril de 2024, Deadlock se encuentra en una fase inicial de pruebas. Se animó a los jugadores a invitar a sus amigos a través del servicio en línea Steam, pero inicialmente se les pidió que no compartieran detalles del juego públicamente.",
+      "Poco después de comenzar las pruebas, imágenes y videos de Deadlock comenzaron a filtrarse en internet. El 12 de agosto de 2024, un periodista fue expulsado del juego tras publicar una vista previa en el sitio tecnológico The Verge.",
+      "Más tarde ese mes, Valve eliminó las restricciones sobre conversaciones públicas para los probadores y lanzó la página oficial de Deadlock en la tienda de Steam.",
+      "En septiembre de 2024, Deadlock alcanzó más de 170.000 jugadores simultáneos."
+    ]
+  },
+
+  "gameplayContent": {
+    "subTittleContent": "Jugabilidad",
+    "textCommonContent": [
+      "Deadlock es un shooter en tercera persona con equipos de 6 contra 6 que combina elementos de MOBA.",
+      "En cada partida, los 12 jugadores controlan héroes únicos que comienzan divididos en tres caminos en un mapa grande. Para ganar, un equipo debe avanzar con sus tropas por los caminos y destruir al patrón del equipo contrario, una entidad sobrenatural ubicada en su base.",
+      "Los jugadores pueden obtener almas y puntos de habilidad al eliminar tropas, NPCs neutrales llamados habitantes y otros jugadores. Estos recursos se pueden usar para mejorar las habilidades de los héroes y comprar objetos en tiendas de curiosidades, haciéndolos más poderosos.",
+      "El mapa puede explorarse mediante tirolesas en cada ruta y teletransportadores. El juego cuenta con más de 30 héroes jugables, cada uno con armas, estadísticas y habilidades únicas.",
+      "Deadlock tiene lugar en una versión alternativa de la ciudad de Nueva York, con referencias al ocultismo."
+    ]
+  },
+
+  "isSubmitedContent": {
+    "subTittleContent": "¡Mensaje Enviado con Éxito!",
+    "textCommonContent": "Gracias por tu comentario. Te responderemos pronto.",
+    "buttonCommonContent": "Nuevo Mensaje"
+  },
+
+  "submitFormContent": {
+    "subTittleContent": "Tu Opinión",
+    "textCommonContent": "¡Queremos saber qué opinas del juego!",
+
+    "formNome": "Nombre Completo",
+    "formEmailPlaceholder": "tucorreo@email.com",
+    "formMensagem": "Mensaje",
+    "formMnesagemPlaceholder": "Escribe tu mensaje aquí...",
+    "formButton": "Enviar Mensaje"
+  },
+
+  "navBarContent": {
+    "buttonGaleriaContent": "Galería"
+  },
+
+  "galeriaContent": {
+    "favoritoButton": "★ Favorito",
+    "favoritarButton": "☆ Favorito",
+    "compartilharButton": "Compartir"
+  },
+
+  "footerContent": {
+    "textCommonContent2": "Todos los derechos de imagen pertenecen a Valve",
+    "textCommonContent3": "Agradecimiento especial a DeadlockAPI"
+  }
+}
