@@ -1,10 +1,7 @@
 import React from "react";
 import TextCommon from "../../atoms/textCommon/TextCommon";
-import { useTranslations } from "next-intl";
 
 export default function Footer() {
-  const t = useTranslations();
-
   return (
     <>
       <footer className="bg-[var(--color-bg-third)] fixed bottom-0 left-0 w-full p-2 sm:p-4 flex flex-col sm:flex-row justify-between items-center gap-2 z-50">
